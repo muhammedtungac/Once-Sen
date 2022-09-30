@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:orientation="horizontal"
+    android:background="@color/oncesen_mainColor">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/kullaniciAraCikisCircleImageView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:src="@drawable/back_white_img">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <EditText
+
+        android:id="@+id/kullaniciAraEditText"
+        android:background="@color/oncesen_mainColor"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="4"
+        android:hint="Kullanıcı Ara"
+        android:textColor="@color/white"
+        >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/kullaniciAraButton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:text="Ara"
+        android:textAllCaps="false">
+
+    </Button>
+</LinearLayout>

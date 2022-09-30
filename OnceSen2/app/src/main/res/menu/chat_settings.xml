@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        app:showAsAction="never"
+        android:id="@+id/mesajDurumItem"
+        android:title="Mesaj İsteğini Onayla">
+    </item>
+    <item
+        app:showAsAction="never"
+        android:id="@+id/medyaIzinVerItem"
+        android:title="Medya İzni">
+    </item>
+
+    <item
+        app:showAsAction="never"
+        android:id="@+id/mesajlariSilItem"
+        android:title="Mesajları Sil">
+    </item>
+
+    <item
+        app:showAsAction="never"
+        android:id="@+id/engelleItem"
+        android:title="Engelle">
+    </item>
+
+    <item
+        app:showAsAction="never"
+        android:id="@+id/sikayetIzinItem"
+        android:title="Şikayet Et">
+    </item>
+
+</menu>

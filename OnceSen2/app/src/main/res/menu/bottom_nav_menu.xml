@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/navigation_stories"
+        android:icon="@drawable/story_bottom_navigation"
+        android:title="Stories"
+        />
+    <item
+        android:id="@+id/navigation_message"
+        android:icon="@drawable/oncesen_mesaj_themecolor"
+        android:title="Messages" />
+
+    <item
+        android:id="@+id/navigation_shuffle"
+        android:icon="@drawable/shuffle_bottom_navigation"
+        android:title="Shuffle" />
+
+    <item
+        android:id="@+id/navigation_bildirim"
+        android:icon="@drawable/notifications_bottom_navigation"
+        android:title="Notifications" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/user1256x256"
+        android:title="Profile" />
+
+</menu>

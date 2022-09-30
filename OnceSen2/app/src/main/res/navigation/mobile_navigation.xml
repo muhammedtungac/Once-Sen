@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_shuffle"
+    >
+    <fragment
+        android:id="@+id/navigation_stories"
+        android:name="com.example.oncesen2.Fragment.StoriesFragment"
+        android:label="Stories"
+        tools:layout="@layout/fragment_stories" />
+    <fragment
+        android:id="@+id/navigation_message"
+        android:name="com.example.oncesen2.Fragment.MessagesFragment"
+        android:label="Messages"
+        tools:layout="@layout/fragment_messages" />
+    <fragment
+        android:id="@+id/navigation_shuffle"
+        android:name="com.example.oncesen2.Fragment.ShuffleFragment"
+        android:label="Shuffle"
+        tools:layout="@layout/fragment_shuffle" />
+    <fragment
+        android:id="@+id/navigation_bildirim"
+        android:name="com.example.oncesen2.Fragment.BildirimFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_bildirim" />
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.oncesen2.Fragment.NewKullaniciFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_new_kullanici" />
+
+</navigation>

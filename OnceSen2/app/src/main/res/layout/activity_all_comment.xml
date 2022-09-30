@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AllCommentActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/commentScrollView"
+        >
+    </ScrollView>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/oncesen_mainColor"
+        android:layout_height="?android:attr/actionBarSize"
+        android:id="@+id/commentToolbar">
+      <ImageView
+          android:id="@+id/commentActivityBackButton"
+          android:layout_width="50dp"
+          android:layout_gravity="center"
+          android:layout_height="50dp"
+          android:src="@drawable/back_white_img">
+
+      </ImageView>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_gravity="center"
+          android:text="Yorumlar"
+          android:textSize="20dp"
+          android:layout_marginLeft="5dp"
+          android:textColor="@color/white"
+          android:layout_height="wrap_content">
+
+      </TextView>
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/allCommentRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/commentToolbar">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+  </LinearLayout>
+  <LinearLayout
+      android:id="@+id/sendPostCommentLinearLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="5dp"
+      android:orientation="horizontal"
+      android:padding="3dp"
+      android:layout_alignParentBottom="true"
+
+      >
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="3"
+        android:hint="Yorum Yap">
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/sendPostAllCommentEditText"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="3"
+          android:backgroundTint="@color/white"
+          android:inputType="textCapSentences|textMultiLine"
+          android:lines="5"
+          android:maxLength="200"
+          android:maxLines="10"
+          android:padding="5dp"
+          android:textSize="15dp"
+          android:tooltipText="Hakkımda">
+
+      </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/postCommentAllButton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Gönder"
+        android:textAllCaps="false">
+
+    </Button>
+  </LinearLayout>
+</RelativeLayout>

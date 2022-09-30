@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:id="@+id/userAnaLayout"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="50dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="80dp"
+                android:id="@+id/friendRequestImage"
+                android:layout_margin="5dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:textSize="13dp"
+                android:text="Kullanıcı İsmi"
+                android:layout_height="wrap_content"
+                android:id="@+id/usernameTextView">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ekle"
+                android:id="@+id/acceptButton"></Button>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:visibility="invisible"></EditText>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:visibility="invisible"></EditText>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:visibility="invisible"></EditText>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sil"
+                android:id="@+id/cancelButton"></Button>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/item1"
+        android:title="Ayarlar"
+        android:iconTint="@color/white"
+        >
+
+    </item>
+    <item
+        android:id="@+id/itemCikis"
+        android:title="Çıkış"
+        ></item>
+    <item
+        android:id="@+id/item2"
+        android:title=""
+        android:icon="@drawable/edit_circle_button"
+        android:iconTint="@color/white"
+        app:showAsAction="ifRoom"
+        >
+
+    </item>
+    <item
+        android:id="@+id/gonderiEkle"
+        android:title=""
+        android:icon="@drawable/gonderi_ekle"
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/white"></item>
+</menu>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Seçili Mesajı Düzenle"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@color/oncesen_mainColor"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editCommentTextInputEditText"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="3"
+            android:hint="Mesaj"
+            android:backgroundTint="@color/white"
+            android:inputType="textCapSentences|textMultiLine"
+            android:lines="5"
+            android:nextFocusUp="@id/editCommentTextInputEditText"
+            android:nextFocusLeft="@id/editCommentTextInputEditText"
+            android:maxLength="200"
+            android:maxLines="10"
+            android:textSize="15dp"
+            android:tooltipText="Hakkımda">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    <Button
+        android:id="@+id/editCommentButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:text="Düzenle"
+        android:textSize="14dp"
+        android:textAllCaps="false">
+
+    </Button>
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:background="@color/oncesen_mainColor"
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:titleTextColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/oncesen_mainColor"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/chatBackImageButton"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/back_white_img">
+
+        </ImageView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/toolbarProfilePic"
+            android:layout_width="40dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:layout_height="40dp"
+
+            ></de.hdodenhof.circleimageview.CircleImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/toolbarUserId"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </LinearLayout>
+</androidx.appcompat.widget.Toolbar>

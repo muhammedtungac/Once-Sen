@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.StoriesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/oncesen_mainColor"
+            android:layout_height="?android:actionBarSize">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Stories"
+                android:layout_margin="10dp"
+                android:textSize="25dp"
+                android:textColor="@color/white"></TextView>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/storyHorizontalRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/userCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/myProfilePicture"
+                    android:layout_margin="5dp"
+                    android:layout_alignParentLeft="true"
+                    app:civ_border_color="@color/oncesen_mainColor"
+                    app:civ_border_width="5dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                    <TextView
+                        android:id="@+id/myUserName"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"
+                        android:layout_toRightOf="@id/myProfilePicture"
+                        android:layout_toLeftOf="@id/addStory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/addStory"
+                    android:layout_margin="3dp"
+                    android:src="@drawable/add_user_picture"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/editStory"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    ></de.hdodenhof.circleimageview.CircleImageView>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/editStory"
+                    android:layout_margin="3dp"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/edit_circle_button"
+                    ></de.hdodenhof.circleimageview.CircleImageView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/storyVerticalRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Tüm Mesajlar Silinsin mi?"
+        android:layout_gravity="center"
+        android:textColor="@color/oncesen_mainColor"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Evet"
+            android:id="@+id/evetButton"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content">
+
+        </Button>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:visibility="invisible"></EditText>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Hayır"
+            android:id="@+id/hayirButton"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content">
+
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

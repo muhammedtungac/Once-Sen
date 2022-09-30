@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/new_kullanici_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.NewKullaniciFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/oncesen_mainColor"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                    <TextView
+                        android:id="@+id/customTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="20dp">
+
+                    </TextView>
+
+                </androidx.appcompat.widget.Toolbar>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/mainProfilePicture"
+                        app:civ_border_color="@color/oncesen_mainColor"
+                        app:civ_border_width="5dp"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_margin="5dp">
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/arkadasSayisiText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@color/oncesen_mainColor"
+                                android:textSize="13dp"></TextView>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="1dp"></LinearLayout>
+
+                            <TextView
+                                android:id="@+id/gonderiText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Gönderiler"
+                                android:textColor="@color/oncesen_mainColor"
+                                android:textSize="13dp">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/bosluk1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:visibility="invisible"></EditText>
+
+                        <EditText
+                            android:id="@+id/bosluk2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:visibility="invisible"></EditText>
+
+                        <EditText
+                            android:id="@+id/bosluk3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:visibility="invisible"></EditText>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/takipciSayisiText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@color/oncesen_mainColor"
+                                android:textSize="13dp"></TextView>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="1dp"></LinearLayout>
+
+                            <TextView
+                                android:id="@+id/takipciText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Takipçi"
+                                android:textColor="@color/oncesen_mainColor"
+                                android:textSize="13dp">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/bosluk4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:visibility="invisible"></EditText>
+
+                        <EditText
+                            android:id="@+id/bosluk5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:visibility="invisible"></EditText>
+
+                        <EditText
+                            android:id="@+id/bosluk6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:visibility="invisible"></EditText>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/mesajSayisiText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@color/oncesen_mainColor"
+                                android:textSize="13dp"></TextView>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="1dp"></LinearLayout>
+
+                            <TextView
+                                android:id="@+id/mesajlarText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mesajlar"
+                                android:textColor="@color/oncesen_mainColor"
+                                android:textSize="13dp">
+
+                            </TextView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/kullaniciIsmi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/oncesen_mainColor"
+                    android:textSize="20dp"></TextView>
+
+                <TextView
+                    android:id="@+id/hakkimdaText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="marquee"
+                    android:maxLength="200"
+                    android:maxLines="10"
+                    android:textSize="13dp"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/oncesen_mainColor">
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/gonderiRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    ></androidx.recyclerview.widget.RecyclerView>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>

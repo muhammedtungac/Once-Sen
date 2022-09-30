@@ -1,0 +1,49 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.OnceSen2" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/oncesen_mainColor</item>
+        <item name="colorPrimaryVariant">@color/oncesen_mainColor</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="titleTextColor">@style/myclosebutton</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="actionModeBackground">@color/oncesen_mainColor</item>
+
+        <item name="actionModeCloseButtonStyle">@style/myclosebutton</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/oncesen_mainColor</item>
+        <item name="colorSecondaryVariant">@color/oncesen_mainColor</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:color">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/oncesen_mainColor</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.OnceSen2.Child" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">false</item>
+        <item name="android:windowTranslucentNavigation" tools:targetApi="kitkat">false</item>
+        <item name="android:fitsSystemWindows">false</item>
+    </style>
+
+    <style name="Theme.OnceSen2.Fullscreen" parent="Theme.OnceSen2">
+        <item name="android:actionBarStyle">@style/Widget.Theme.OnceSen2.ActionBar.Fullscreen</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="ThemeOverlay.OnceSen2.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
+        <item name="fullscreenTextColor">@color/light_blue_A200</item>
+    </style>
+
+    <style name="myclosebutton" parent="Widget.AppCompat.Light.ActionButton.CloseMode">
+        <item name="android:tint">#fff</item> <!-- whatever color -->
+    </style>
+
+</resources>

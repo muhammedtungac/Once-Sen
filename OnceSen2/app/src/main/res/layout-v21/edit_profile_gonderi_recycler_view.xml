@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="1dp"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/gonderiImageView"
+            android:layout_width="135dp"
+            android:layout_height="140dp"
+            android:clickable="true"
+            >
+
+        </ImageView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/gonderiSilImageView"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignRight="@id/gonderiImageView"
+            android:layout_alignTop="@id/gonderiImageView"
+            android:layout_margin="1dp"
+            android:src="@drawable/delete_pic" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

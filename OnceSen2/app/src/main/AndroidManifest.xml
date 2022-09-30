@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.oncesen2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="androidx.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logomain"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logomain"
+
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OnceSen2">
+        <activity android:name=".Activity.ViewStoryActivity"></activity>
+        <activity android:name=".Activity.EditStoryActivity" />
+        <activity android:name=".Activity.SikayetActivity" />
+        <activity android:name=".Activity.AllCommentActivity" />
+        <activity android:name=".Activity.PostActivity" />
+        <activity
+            android:name=".Activity.EditProfileActivity"
+            android:windowSoftInputMode="stateUnchanged" />
+        <activity android:name=".Activity.MesajIstekActivity" />
+        <activity
+            android:name=".Activity.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".Activity.KayitOlActivity4" />
+        <activity android:name=".Activity.KayitOlActivity3" />
+        <activity android:name=".Activity.KayitOlActivity2" />
+        <activity android:name=".Activity.ChatActivity" />
+        <activity android:name=".Activity.GirisActivity" />
+        <activity android:name=".Activity.AnaActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.KayitOlActivity1" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+    </application>
+
+</manifest>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.MesajIstekActivity"
+    android:clickable="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/oncesen_mainColor"
+        android:elevation="4dp"
+        android:clickable="true">
+        <ImageView
+            android:layout_width="50dp"
+            android:id="@+id/chatBackImageButton"
+            android:src="@drawable/backbutton"
+            android:layout_height="match_parent"
+            app:tint="@color/white">
+
+        </ImageView>
+
+    </LinearLayout>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:id="@+id/mesajIstekRecyclerView">
+</androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

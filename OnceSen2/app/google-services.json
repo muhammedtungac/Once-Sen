@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "548614358985",
+    "project_id": "once-sen-project2",
+    "storage_bucket": "once-sen-project2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:548614358985:android:d7f74f3223d874a1ba8a18",
+        "android_client_info": {
+          "package_name": "com.example.oncesen2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "548614358985-a9b2tajno3rrbdidldnb3cjc3cfu1pr8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0OnWfpnMDm8U0wUO2Mhouepg9ySDa2dE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "548614358985-a9b2tajno3rrbdidldnb3cjc3cfu1pr8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/layout1"
+        android:layout_alignParentLeft="true"
+
+        >
+
+        <TextView
+            android:id="@+id/postCommentUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:textColor="@color/oncesen_mainColor"
+            android:textSize="17dp"
+            android:textStyle="bold">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/layout2"
+        android:padding="1dp"
+        android:layout_toRightOf="@+id/layout1"
+        android:layout_toLeftOf="@+id/layout3"
+        >
+
+        <TextView
+            android:id="@+id/postCommentMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            >
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/layout3"
+        android:layout_alignParentRight="true"
+        >
+        <ImageView
+            android:id="@+id/commentPopupImageView"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:onClick="showPopup"
+            android:src="@drawable/all_comment_settings_popup">
+
+        </ImageView>
+
+    </LinearLayout>
+
+</RelativeLayout>

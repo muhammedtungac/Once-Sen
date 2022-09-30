@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:background="@color/oncesen_mainColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/postBackButton"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/back_white_img">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.Toolbar>

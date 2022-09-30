@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".Fragment.HakkimizdaFragment">
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:src="@drawable/logomain"></de.hdodenhof.circleimageview.CircleImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:text="Bize Ulaşın"
+                    android:textColor="@color/oncesen_mainColor"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/browser_actions_bg_grey"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Uygulama hakkında fikir ve görüşleriniz için bize ulaşın."
+                    android:textColor="@color/oncesen_mainColor">
+
+                </TextView>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:enabled="false"
+                android:hint="Mail Adresini Girin..."
+                android:text="oncesen@gmail.com"
+                android:textColor="@color/oncesen_mainColor"
+                android:textSize="12dp"></EditText>
+
+            <EditText
+                android:id="@+id/mailKonu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:hint="Konu"
+                android:textSize="12dp"></EditText>
+
+            <EditText
+                android:id="@+id/mailIcerik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:hint="Mesajınız"
+                android:maxLength="100"
+                android:maxLines="10"
+                android:textSize="12dp"></EditText>
+
+            <Button
+                android:id="@+id/gonderButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Gönder"
+                android:textAllCaps="false"></Button>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

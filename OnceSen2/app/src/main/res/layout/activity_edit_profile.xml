@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/browser_actions_bg_grey"
+    tools:context=".Activity.EditProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/edit_profile_toolbar2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/oncesen_mainColor"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <ImageView
+                    android:id="@+id/chatBackImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/back_white_img">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/editProfileMainText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:text="Profili Düzenle"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"></TextView>
+
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:elevation="10dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:clickable="true">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/userImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:clickable="true"
+                        app:civ_border_color="@color/browser_actions_bg_grey"
+                        app:civ_border_width="5dp">
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/userAddImage"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignRight="@id/userImage"
+                        android:layout_alignBottom="@id/userImage"
+                        android:layout_margin="3dp"
+                        android:src="@drawable/add_user_picture" />
+
+                </RelativeLayout>
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:elevation="10dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    >
+
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Hakkımda"
+                        android:textColorHint="@color/oncesen_mainColor"
+                        app:startIconDrawable="@drawable/edit_circle_button"
+                        app:startIconTint="@color/oncesen_mainColor">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/hakkimdaEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:inputType="textCapSentences|textMultiLine"
+                            android:lines="5"
+                            android:maxLength="200"
+                            android:maxLines="10"
+                            android:padding="5dp"
+                            android:textSize="15dp"
+                            android:tooltipText="Hakkımda"
+                            android:nextFocusUp="@id/hakkimdaEditText"
+                            android:nextFocusLeft="@id/hakkimdaEditText"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:elevation="10dp"
+                app:cardElevation="10dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Gonderiler"
+                    android:textColorHint="@color/oncesen_mainColor"
+                    app:startIconDrawable="@drawable/edit_profile_image"
+                    app:startIconTint="@color/oncesen_mainColor">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:visibility="invisible"
+                        android:enabled="false">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/postPicturesRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+
+                        >
+
+                    </androidx.recyclerview.widget.RecyclerView>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:elevation="20dp"
+                app:cardElevation="20dp">
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Doğum Tarihi"
+                    android:textColorHint="@color/oncesen_mainColor"
+                    app:startIconDrawable="@drawable/edit_profile_calendar"
+                    app:startIconTint="@color/oncesen_mainColor">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/dogumTarihiEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:lines="4"
+                        android:focusable="false"
+                        android:maxLength="200"
+                        android:maxLines="10"
+                        android:padding="5dp"
+                        android:textSize="15dp"
+                        android:tooltipText="Hakkımda"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

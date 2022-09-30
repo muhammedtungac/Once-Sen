@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_margin="5dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="20dp"
+        app:cardMaxElevation="20dp"
+
+        >
+
+        <RelativeLayout
+            android:clickable="true"
+            android:id="@+id/editStoryRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/storyPicRecyclerView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dp">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/storyPicRecyclerView">
+                <TextView
+
+                    android:id="@+id/storySeenRecyclerView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                </TextView>
+                <TextView
+
+                    android:id="@+id/storyTimeRecyclerView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/storyDeleteRecyclerView"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/shuffle_close_icon"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
